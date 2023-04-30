@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 import Filme from './src/components/Filme';
 import { useEffect, useState } from 'react';
 import { ActivityIndicator } from 'react-native-web';
-// import { Header } from 'react-native/Libraries/NewAppScreen';
+import { Text } from 'react-native-web';
 
 
 export default function App() {
@@ -23,8 +23,8 @@ export default function App() {
 
   return (
     <View style={styles.back}>
-      <View>
-        {/* <Header/> */}
+      <View style={styles.header}>
+        <Text style={styles.topF}>TopFilmes</Text>
       </View>
       <View>{filmes.length > 0 ? filmes.map(filme => <Filme filme={filme.attributes}/> ) 
       : <ActivityIndicator/>}</View>
