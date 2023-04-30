@@ -12,11 +12,6 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start'
     },
 
-    button:{
-        fontSize: 14,
-        color: 'red',
-    },
-
     scroll: {
         width: '30%',
         height: 150
@@ -36,7 +31,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#264031',
         padding: 10,
         width: '70%',
-        height: '100%',
+        borderRadius: 10,
     },
     titulo: {
         fontSize: 18,
@@ -51,6 +46,20 @@ const styles = StyleSheet.create({
         borderRadius: 10
     }, 
 
+    btt:{
+    },
+
+    header:{
+        backgroundColor: '#334f3f',
+        marginBottom: 20,
+        height: '50%',
+        color: 'white',
+    },
+
+    topF:{
+        fontSize: 18,
+        color: 'white',
+    },
 });
 
 export default styles;
